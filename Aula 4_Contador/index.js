@@ -23,6 +23,6 @@ console.log ("Contador realizando uma atribuição multiplicativa com o comando 
 calculo = num1 * contador;
 console.log ('Sempre tomar cuidado com o tipo de dado contido na váriavel ao realizar contas exemplo multiplicando uma string com number temos o resultado:',  calculo);
 
-calculo = num2 + contador;
+calculo = num2 + contador;-
 console.log ('Ao tratar o dado utilizando o comando parseInt, podemos realizar a conta com variavéis tipo string contendo apenas valores numéricos:',  calculo);
 
