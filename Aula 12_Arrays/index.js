@@ -23,4 +23,18 @@ console.log(`"pop" é o comando utilizado para remover o ultimo elemento do arra
 alunos.shift();
 console.log(`Alterando o comando para "shift" o comando utilizado remove o primeiro elemento do array: ${alunos}`)
 
+delete alunos[0];
+console.log(`Removemos registros do array com "delete" retirando o primeiro item temos: ${alunos}`);
+
+console.log(`O comando "slice" é possivel selecionar apenas alguns itens do array:  ${alunos.slice(0,3)}`);
+
+alunos.unshift('Luiz');
+
+console.log(`O comando "slice" é possivel selecionar apenas alguns itens do array:  ${alunos.slice(0, -1)}`);
+
+console.log(`verificamos se a variavel é um array com "instanceOff Array" alunos é um Array? ${alunos instanceof Array}`);
+
+
+
+
 
