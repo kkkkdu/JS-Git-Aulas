@@ -21,26 +21,27 @@ body{
 
 .container{
     max-width: 640px;
-    margin: 5% auto;
-    background: #ffff;
+    margin: 12% auto;
+    background: #ffffff;
     padding: 20px;
     border-radius: 20px;
 }
 
 form input, form label, form button{
     display:block;
-    width: 100%;
-    margin-bottom:10px
+    width: 36%;
+    margin-bottom:10px;
+    border-radius: 6px;
+    
 
 }
 form input{
-
     font-size: 24px;
     height: 25px;    
-    padding: 0 6px;
+    padding: 20px 40px;
 }
 form input:focus{
-    outline: 1px solid var(--primary-color);
+    outline: 3px solid var(--primary-color);
 }
 form button{
     border: none;
@@ -59,7 +60,7 @@ form button:active{
     background: rgb(35, 142, 196)
 }
 .paragrafo-resultado{
-    background: rgb(0, 255, 179);
-    padding: 10px 20px
-
+    background: rgb(51, 228, 75);
+    padding: 10px 20px;
+    
 }
