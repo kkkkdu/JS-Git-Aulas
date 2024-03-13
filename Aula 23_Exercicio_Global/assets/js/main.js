@@ -78,7 +78,17 @@ function setResultado(msg, isValid) {
     imcResultado.innerHTML = '';
     
     const p = document.createElement('p');
-    if (isValid) p.classList.add('paragrafo-resultado');
-    p.innerHTML = msg;
-    imcResultado.appendChild(p);
+
+
+    if (isValid){ 
+        p.classList.add('paragrafo-resultado');
+        p.innerHTML = msg;
+        imcResultado.appendChild(p);
+    }
+    else{
+        p.classList.add('bad')
+        p.innerHTML = msg;
+        imcResultado.appendChild(p);
+    }
+
 };
