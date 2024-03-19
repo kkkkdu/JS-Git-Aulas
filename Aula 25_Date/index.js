@@ -20,21 +20,22 @@ const dataCrua = new Date();  Ele ira pegar a data atual exata
 
 // console.log(Date.now());
 // console.log(dataString.toString());
+function zeroAEsquerda (num){
 
-const datas = new Date();
-const dataLocal = formataData(datas);
-formataData(dataLocal);
+  return num >=10 ? num : `0${num}`; 
+}
 
-function formataData (datas) {
-    console.log('Data função', datas)
-     const dia = datas.getDate();
-     const mes = datas.getMonth() + 1;
-     const ano = datas.getFullYear();
-     const hora = datas.getHours();
-     const minuto = datas.getMinutes();
-     const segundo = datas.getSeconds();
-     const milisegundo = datas.getMilliseconds();
-     const diaDaSemana = datas.getDay();
+function formataData (datados) {
+     const dia = zeroAEsquerda(datados.getDate());
+     const mes = zeroAEsquerda(datados.getMonth() + 1);
+     const ano = zeroAEsquerda(datados.getFullYear());
+     const hora = zeroAEsquerda(datados.getHours());
+     const minuto = zeroAEsquerda(datados.getMinutes());
+     const segundo = zeroAEsquerda(datados.getSeconds());
+          
 
-   return`${dia}/${mes}/${ano} ${hora}:${minuto}:${segundo}:${milisegundo}`
+   return `${dia}/${mes}/${ano} ${hora}:${minuto}:${segundo}`
  }
+const datados = new Date();
+const dataLocal = formataData(datados);
+console.log(dataLocal);
