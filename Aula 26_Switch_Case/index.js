@@ -30,7 +30,6 @@ switch(diaSemana){
 }
 }
 
-
 const data = new Date('2000-06-23 20:00:00');
 const diaSemana = data.getDay();
 let diaTexto = getdiaTexto(diaSemana);
