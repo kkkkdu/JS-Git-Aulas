@@ -1,5 +1,6 @@
 let datas = new Date();
 let diaSemanal = datas.getDay();
+let diaFeira = diaDeFeira(diaSemanal)
 
 function diaDeFeira(feira){
    
@@ -42,7 +43,7 @@ function dataCorreta(){
 
         
     }
-    return `${dia}/${mes}/${ano} ${hora}:${minuto}:${segundo}` ;
+    return `${diaFeira} ${dia}/${mes}/${ano} ${hora}:${minuto}:${segundo}` ;
 }
 const dataCerta = dataCorreta();
 
