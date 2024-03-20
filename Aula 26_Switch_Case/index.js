@@ -1,49 +1,37 @@
-const data = new Date('2000-06-23 20:00:00');
-const diaSemana = data.getDay();
+function getdiaTexto(diaSemana){
+    let diaTexto;
+
 
 switch(diaSemana){
     case 0:
         diaTexto = 'Domingo';
-        break;
+        return diaTexto;
     case 1:
         diaTexto = 'Segunda';
-        break;
+        return diaTexto;
     case 2:
         diaTexto = 'Terça';
-        break;
+        return diaTexto;
     case 3:
         diaTexto = 'Quarta';
-        break;
+        return diaTexto;
     case 4:
         diaTexto = 'Quinta';
-        break;
+        return diaTexto;
     case 5:
         diaTexto = 'Sexta'
-        break;
+        return diaTexto;
     case 6:
         diaTexto = 'Sábado';
-        break; 
+        return diaTexto;
     default:
         diaTexto = 'Não é um dia válido';
+        return diaTexto;
+}
 }
 
-// if (diaSemana === 0){
-//     diaTexto = 'Domingo';
-// }else if (diaSemana === 1){
-//     diaTexto = 'Segunda'
-// }else if (diaSemana === 2){
-//     diaTexto = 'Terça'
-// }else if (diaSemana === 3){
-//     diaTexto = 'Quarta'
-// }else if (diaSemana === 4){
-//     diaTexto = 'Quinta'
-// }else if (diaSemana === 5){
-//     diaTexto = 'Sexta'
-// }else if (diaSemana === 6){
-//     diaTexto = 'Sábado'
-// }
-// else {
-//     diaTexto = 'Não é um dia da Semana'
-// }
 
+const data = new Date('2000-06-23 20:00:00');
+const diaSemana = data.getDay();
+let diaTexto = getdiaTexto(diaSemana);
 console.log(diaSemana, diaTexto);
