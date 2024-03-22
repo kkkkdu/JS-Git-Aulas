@@ -1,12 +1,21 @@
+let texto = document.querySelector('.container h1')
 let datas = new Date();
 let diaSemanal = datas.getDay();
-let diaFeira = diaDeFeira(diaSemanal)
+let diaFeira = diaDeFeira(diaSemanal);
+
+
 
 function diaDeFeira(feira){
    
     return feira >= 7 ? feira: `${feira}-feira` ;
 
 }
+
+function zeroAEsquerda (num){
+
+    return num >=10 ? num : `0${num}`; 
+  }
+  
 
 function dataCorreta(){
     let dia = datas.getDate();
@@ -81,11 +90,12 @@ function dataCorreta(){
             mes = 'Fevereiro';
             break;
             }
-    return `${diaDeFeira(diaSemanal)} ${dia} de ${mes} de ${ano} ${hora}:${minuto}` ;
+    return `${diaDeFeira(diaSemanal)} ${dia} de ${mes} de ${ano} ${hora}:${zeroAEsquerda(minuto)}` ;
 }
 const dataCerta = dataCorreta();
+texto.innerHTML = dataCerta;
 
-console.log(dataCerta);
+console.log(texto, dataCerta) ;
 
 
 
